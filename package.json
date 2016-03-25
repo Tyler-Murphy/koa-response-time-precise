@@ -1,0 +1,32 @@
+{
+  "name": "koa-response-time-precise",
+  "version": "1.0.0",
+  "description": "Microsecond-precision X-Response-Time headers",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Tyler-Murphy/koa-response-time-precise.git"
+  },
+  "keywords": [
+    "koa",
+    "response",
+    "x-response-time",
+    "header",
+    "microsecond",
+    "precise"
+  ],
+  "author": "Tyler Murphy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tyler-Murphy/koa-response-time-precise/issues"
+  },
+  "homepage": "https://github.com/Tyler-Murphy/koa-response-time-precise#readme",
+  "devDependencies": {
+    "jasmine": "^2.4.1",
+    "koa": "^1.2.0",
+    "request-promise": "^2.0.1"
+  }
+}
