@@ -2,7 +2,8 @@
 const http = require('http');
 const request = require('request-promise');
 const responseTime = require('../index.js');
-const app = require('koa')();
+const Koa = require('koa');
+const app = new Koa();
 let server;
 
 const host = '127.0.0.1';

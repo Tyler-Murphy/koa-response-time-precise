@@ -1,12 +1,12 @@
 Based on https://github.com/koajs/response-time.
 
-#Install
+# Install
 
 ```
 npm install --save koa-response-time-precise
 ```
 
-#Use
+# Use
 
 ```javascript
 const koa = require('koa');
@@ -17,7 +17,7 @@ app.use(responseTime());
 app.listen(8080);
 ```
 
-#Result
+# Result
 
 A header with response time accurate to 0.001 milliseconds is added.
 
