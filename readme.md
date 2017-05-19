@@ -9,12 +9,12 @@ npm install --save koa-response-time-precise
 # Use
 
 ```javascript
-const koa = require('koa');
-const responseTime = require('koa-response-time-precise');
+const Koa = require('koa')
+const responseTime = require('koa-response-time-precise')
 
-const app = koa();
-app.use(responseTime());
-app.listen(8080);
+const app = new Koa()
+app.use(responseTime())
+app.listen(8080)
 ```
 
 # Result
