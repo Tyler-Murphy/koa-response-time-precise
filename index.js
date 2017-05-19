@@ -5,11 +5,11 @@
  * @return {Function}
  */
 module.exports = function responseTime() {
-    return function* responseTime(next) {
-        let start = process.hrtime();
-        yield* next;
-        let elapsed = process.hrtime(start);
-        let string = (elapsed[0] * 1e3 + elapsed[1] / 1e6).toFixed(3) + 'ms';
-        this.set('X-Response-Time', string);
+    return async function responseTime(ctx, next) {
+        const start = process.hrtime();
+        await next();
+        const elapsed = process.hrtime(start);
+        const string = (elapsed[0] * 1e3 + elapsed[1] / 1e6).toFixed(3) + 'ms';
+        ctx.set('X-Response-Time', string);
     };
 }
